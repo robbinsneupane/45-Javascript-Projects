@@ -1,0 +1,60 @@
+:root {
+  --content: "+";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(27, 7, 56);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.empty {
+  background-color: rgb(44, 16, 86);
+  min-width: 8rem;
+  min-height: 8rem;
+  border: 2px solid white;
+  border-radius: 0.3rem;
+  position: relative;
+}
+.empty::after {
+  content: var(--content);
+  color: rgb(182, 134, 254);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fill {
+  background-image: url("https://images.unsplash.com/photo-1672708858576-ce0b773c8f59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 7.8rem;
+  height: 7.8rem;
+  border: transparent;
+  border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.hold {
+  border: 1px solid rgb(182, 134, 254);
+  border-radius: 0.3rem;
+}
+.hovered {
+  background-color: rgb(34, 9, 72);
+  border-color: rgb(182, 134, 254);
+  border-style: dashed;
+}

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.5s;
+}
+.iphone {
+  background-image: url("https://helios-i.mashable.com/imagery/articles/04RAD1rCWIUH5Rp0eg6dA0k/hero-image.fill.size_1200x1200.v1662580897.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+.watch {
+  background-image: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/FKL23?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1647901024532");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+.active {
+  width: 100%;
+  flex: 4;
+  transition: all 0.5s;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 70%;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  font-size: 1.3rem;
+}
+button {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: 1px 3px 8px rgba(238, 53, 53, 0.4);
+  transition: 0.3s;
+}
+button:hover {
+  background-color: transparent;
+  outline: 2px solid red;
+  color: red;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1rem;
+  }
+}

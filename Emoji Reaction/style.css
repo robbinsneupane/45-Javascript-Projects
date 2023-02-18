@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(127, 217, 255);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  width: 30rem;
+  height: 15rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 10px rgba(37, 102, 176, 0.3);
+  position: relative;
+}
+.emoji {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 4rem;
+  width: 4rem;
+  display: flex;
+  overflow: hidden;
+}
+.emoji i {
+  transform: translateX(0rem);
+  transition: all 0.3s ease-in-out;
+}
+.stars {
+  color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.stars i.active {
+  color: gold;
+}

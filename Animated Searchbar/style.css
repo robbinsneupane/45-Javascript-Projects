@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 4px 6px 20px rgba(90, 122, 142, 0.3),
+    -4px -6px 20px rgba(255, 255, 255, 1);
+  border-radius: 3rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+i {
+  color: rgb(90, 122, 142);
+  cursor: pointer;
+}
+input {
+  width: 0;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: rgb(90, 122, 142);
+}
+img {
+  width: 0;
+  transition: 0.3s;
+}
+section.active {
+  width: 20rem;
+  transition: 0.4s;
+}
+section.active i {
+  width: 2rem;
+}
+section.active input {
+  width: 100%;
+}
+section.active img {
+  width: 1.8rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+::placeholder {
+  font-size: 0.8rem;
+  color: rgb(121, 153, 171);
+}

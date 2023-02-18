@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 40%;
+  border: 0.1px solid rgb(228, 227, 227);
+  border-radius: 0.3rem;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card .header {
+  height: 15rem;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.content {
+  margin: 1.5rem;
+}
+
+.content .text h3 {
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  height: 3rem;
+}
+
+.content .text p {
+  margin: 0.5rem 0;
+  color: rgb(102, 101, 101);
+  letter-spacing: 0.5px;
+  height: 4.5rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.profileImg {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.profileImg img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author .details {
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  width: 9rem;
+}
+
+.author .details strong {
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+  letter-spacing: 0.5px;
+  height: 1.2rem;
+}
+
+.author .details small {
+  color: rgb(102, 101, 101);
+  letter-spacing: 0.05rem;
+  height: 0.95rem;
+}
+
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 10%,
+    #f6f7f8 20%,
+    #f6f7f8 100%
+  );
+  background-size: 200% 100%;
+  animation: bgEffect 1.2s linear infinite;
+}
+
+.animated-text-bg {
+  border-radius: 0.4rem;
+  display: inline-block;
+  margin: 0;
+  height: 20px;
+  width: 100%;
+}
+
+@keyframes bgEffect {
+  from {
+    background-position: 50% 0;
+  }
+
+  to {
+    background-position: -150% 0;
+  }
+}

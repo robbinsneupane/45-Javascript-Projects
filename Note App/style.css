@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 65% 55%) 0%,
+    hsl(244deg 69% 55%) 9%,
+    hsl(248deg 72% 54%) 18%,
+    hsl(253deg 75% 54%) 27%,
+    hsl(257deg 78% 54%) 36%,
+    hsl(261deg 82% 54%) 45%,
+    hsl(265deg 85% 53%) 55%,
+    hsl(269deg 88% 53%) 64%,
+    hsl(273deg 91% 53%) 73%,
+    hsl(278deg 94% 52%) 82%,
+    hsl(282deg 97% 52%) 91%,
+    hsl(286deg 100% 51%) 100%
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.wrapper {
+  margin: 4rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+small {
+  color: rgb(176, 173, 173);
+  font-size: 1rem;
+}
+.notes {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.note {
+  position: relative;
+}
+textarea,
+button {
+  width: 20rem;
+  height: 14rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 0.5px solid white;
+  transition: 0.3s;
+  outline: none;
+}
+textarea:hover,
+button:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  transition: 0.3s;
+}
+button {
+  font-size: 2.5rem;
+  color: rgb(95, 94, 94);
+}
+.note h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(88, 87, 87);
+  font-size: 2.5rem;
+  user-select: none;
+  cursor: pointer;
+}

@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(25, 36, 38);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.darkMode {
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkMode input {
+  visibility: hidden;
+}
+
+.darkMode #label {
+  width: 4rem;
+  height: 2rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.darkMode .circle {
+  background-color: white;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  animation: toggleOff 0.4s forwards;
+}
+
+.darkMode input:checked + #label {
+  background-color: rgb(255, 255, 255);
+}
+
+.darkMode input:checked + #label .circle {
+  background-color: rgb(0, 0, 0);
+  animation: toggleOn 0.4s forwards;
+}
+
+@keyframes toggleOn {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(120%);
+    right: 0px;
+  }
+}
+@keyframes toggleOff {
+  from {
+    transform: translateX(120%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.textEffect {
+  margin: 5rem auto 0;
+  color: white;
+}
+/* =================================================== */
+.tabContainer {
+  width: 90%;
+  margin: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.tabContainer .pic {
+  width: 50%;
+}
+
+.tabContainer .pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.tabSection {
+  width: 50%;
+  background-color: rgb(239, 239, 249);
+  border-radius: 0.5rem;
+}
+
+.tabSection .btnContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.btnContainer .btn {
+  background-color: rgb(250, 170, 183);
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+}
+
+.btnContainer .btn:nth-child(1) {
+  border-radius: 0.5rem 0 0 0;
+}
+
+.btnContainer .btn:nth-child(3) {
+  border-radius: 0 0.5rem 0 0;
+}
+
+.btnContainer .btn:hover {
+  background-color: rgb(248, 138, 157);
+  transition: all 0.3s linear;
+}
+
+.btnContainer .btn.active {
+  background-color: rgb(239, 239, 249);
+}
+.tabContent {
+  padding: 1rem;
+}
+
+.content {
+  margin: 1rem 0;
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.tabContent .content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+
+.content p {
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+@media (max-width: 815px) {
+  .tabContainer {
+    display: block;
+    width: 100%;
+  }
+
+  .tabContainer .pic {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .tabContainer .tabSection {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
+.randomImg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.slider {
+  width: 500px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin: 5rem auto;
+  border-radius: 0.5rem;
+}
+
+.slider .imgContainer {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slider span {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  line-height: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 0.01rem;
+  top: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  user-select: none;
+}
+.slider span:hover {
+  opacity: 1;
+}
+
+.slider #leftSlide {
+  left: 0;
+}
+
+.slider #rightSlide {
+  right: 0;
+}
+
+.randomImg h1 {
+  color: white;
+  margin: 3rem 0;
+}
+
+.randomImg .images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin: 4rem;
+}
+
+.randomImg .images img {
+  width: 20rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 3px 8px rgba(97, 97, 97, 0.2);
+}
+
+.randomImg button {
+  font-size: 1.1rem;
+  width: auto;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: rgb(235, 40, 190);
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  transition: 0.3s;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+.randomImg button:hover {
+  color: white;
+  background-color: rgb(247, 6, 163);
+  transition: 0.3s;
+}

@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(198, 215, 230);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.wrapper {
+  width: 25rem;
+  margin: 5rem 0 1rem;
+}
+.searchField {
+  background-color: rgb(96, 96, 243);
+  color: white;
+  padding: 2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.searchField h3 {
+  letter-spacing: 0.3px;
+}
+.searchField label {
+  color: rgb(211, 210, 208);
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+.searchField input {
+  background-color: rgb(46, 46, 141);
+  padding: 0.8rem 1rem;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 3rem;
+}
+::placeholder {
+  color: rgb(181, 180, 178);
+}
+img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: red;
+}
+.results {
+  max-height: 35rem;
+  min-height: 0;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  overflow-y: scroll;
+}
+.results .details {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 0 0.5rem;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+.results .details:last-child {
+  border: none;
+}
+.results .details.hide {
+  display: none;
+}

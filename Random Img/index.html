@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Practice</title>
+  </head>
+  <body>
+    <div class="darkMode">
+      <input type="checkbox" id="checkBox" />
+      <label for="checkBox" id="label">
+        <div class="circle"></div>
+      </label>
+    </div>
+
+    <div class="textEffect"></div>
+
+    <div class="tabContainer">
+      <div class="pic">
+        <img src="/Images/blog55.jpg" alt="" />
+      </div>
+
+      <div class="tabSection">
+        <div class="btnContainer">
+          <button class="btn" data-id="Step 1">Step 1</button>
+          <button class="btn" ata-id="Step 2">Step 2</button>
+          <button class="btn" ata-id="Step 3">Step 3</button>
+        </div>
+
+        <div class="tabContent">
+          <div class="content active">
+            <h2>Step 1</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              eum inventore nulla voluptate totam doloribus deleniti reiciendis
+              aliquam illo corporis exercitationem natus nam, voluptates id
+              vitae, optio doloremque pariatur . aliquam illo corporis
+              exercitationem natus nam, voluptates id vitae, optio doloremque
+              pariatur .
+            </p>
+          </div>
+          <div class="content">
+            <h2>Step 2</h2>
+            <p>
+              Nam animi optio, debitis repellendus magni dolores veritatis
+              molestias quae blanditiis consectetur perferendis distinctio vero
+              tempora nostrum ipsam labore consequuntur nesciunt. Exercitationem
+              nostrum veritatis atque sapiente corporis. Tempora! tempora
+              nostrum ipsam labore consequuntur nesciunt. Exercitationem nostrum
+              veritatis atque sapiente corporis. Tempora!
+            </p>
+          </div>
+          <div class="content">
+            <h2>Step 3</h2>
+            <p>
+              Alias natus iusto reiciendis reprehenderit quo esse. Facilis ea
+              adipisci voluptas perferendis, deleniti molestias ipsum, eum iste
+              consequuntur totam ducimus sit? Ullam enim culpa aspernatur esse
+              earum velit? adipisci voluptas perferendis, deleniti molestias
+              ipsum, eum iste consequuntur totam ducimus sit? Ullam enim culpa
+              aspernatur esse earum velit?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="randomImg">
+      <div class="slider">
+        <div class="imgContainer">
+          <img src="https://picsum.photos/id/1/500/300" alt="" />
+          <img src="https://picsum.photos/id/10/500/300" alt="" />
+          <img src="https://picsum.photos/id/20/500/300" alt="" />
+          <img src="https://picsum.photos/id/101/500/300" alt="" />
+          <img src="https://picsum.photos/id/201/500/300" alt="" />
+          <img src="https://picsum.photos/id/220/500/300" alt="" />
+        </div>
+        <span id="leftSlide" class="material-symbols-outlined">
+          chevron_left
+        </span>
+        <span id="rightSlide" class="material-symbols-outlined">
+          chevron_right
+        </span>
+      </div>
+
+      <h1>Random Image Generator</h1>
+      <div class="images">
+        <img src="https://picsum.photos/300?random=1" alt="" />
+        <img src="https://picsum.photos/300?random=2" alt="" />
+        <img src="https://picsum.photos/300?random=3" alt="" />
+        <img src="https://picsum.photos/300?random=4" alt="" />
+        <img src="https://picsum.photos/300?random=5" alt="" />
+        <img src="https://picsum.photos/300?random=6" alt="" />
+        <img src="https://picsum.photos/300?random=7" alt="" />
+        <img src="https://picsum.photos/300?random=8" alt="" />
+        <img src="https://picsum.photos/300?random=9" alt="" />
+        <img src="https://picsum.photos/300?random=10" alt="" />
+      </div>
+      <button id="loadBtn">Load More</button>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: rgb(39, 161, 254);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+.input {
+  width: 26rem;
+  height: 16rem;
+  background-color: white;
+  color: rgb(39, 161, 254);
+  padding: 2rem 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0rem 2rem 10rem 25rem rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  animation: slideDown 0.5s ease-in-out forwards;
+  z-index: 10;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(150%);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(150%);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-350%);
+    opacity: 0;
+  }
+}
+.input label {
+  font-size: 1rem;
+}
+.input input {
+  width: 18rem;
+  height: 3rem;
+  border: 2px solid rgb(39, 161, 254);
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+  color: rgb(39, 161, 254);
+  padding: 0.5rem;
+}
+.input button {
+  width: 6rem;
+  height: 3rem;
+  color: white;
+  background-color: rgb(39, 161, 254);
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.input span {
+  color: red;
+  font-size: 0.8rem;
+}
+h1 {
+  margin: 4rem 0 0.5rem 0;
+}
+p {
+  font-weight: 400;
+}
+.cup {
+  background-color: white;
+  color: rgb(2, 112, 197);
+  width: 8rem;
+  height: 16rem;
+  border: 0.25rem solid rgb(2, 112, 197);
+  border-radius: 0 0 2rem 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.cup #remaining {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+#remaining span {
+  font-weight: 600;
+}
+#remaining small {
+  font-size: 0.8rem;
+}
+#percentage {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(80, 176, 250);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+p {
+  margin: 1rem auto;
+}
+.cups {
+  width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.s-cup {
+  width: 4rem;
+  height: 8rem;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+.s-cup.full {
+  background-color: rgb(80, 176, 250);
+  color: white;
+  transition: 0.3s;
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 65% 55%) 0%,
+    hsl(244deg 69% 55%) 9%,
+    hsl(248deg 72% 54%) 18%,
+    hsl(253deg 75% 54%) 27%,
+    hsl(257deg 78% 54%) 36%,
+    hsl(261deg 82% 54%) 45%,
+    hsl(265deg 85% 53%) 55%,
+    hsl(269deg 88% 53%) 64%,
+    hsl(273deg 91% 53%) 73%,
+    hsl(278deg 94% 52%) 82%,
+    hsl(282deg 97% 52%) 91%,
+    hsl(286deg 100% 51%) 100%
+  );
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 0.1px solid rgb(167, 167, 167);
+  border-radius: 1rem;
+  box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.1);
+  padding: 3rem 3rem 2rem;
+}
+h1 {
+  margin: 0 0 4rem;
+}
+.unit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.unit input {
+  width: 50%;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+}

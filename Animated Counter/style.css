@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ready {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ready.hide {
+  display: none;
+}
+
+.ready .nums {
+  width: 15rem;
+  height: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ready .nums h1 {
+  color: rgb(4, 170, 231);
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg);
+  transform-origin: bottom center;
+  transition: all 0.5s;
+}
+
+.nums h1.out {
+  animation: goOut 0.6s ease-in-out;
+}
+
+@keyframes goOut {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
+
+.nums h1.in {
+  animation: goIn 0.6s ease-in-out;
+}
+
+@keyframes goIn {
+  0% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+  30% {
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+  75%{
+    transform: translate(-50%, -50%) rotate(5deg)
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.ready h5 {
+  font-size: 1.5rem;
+}
+
+.replay {
+  display: none;
+}
+
+.replay.show {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  animation: replayAnimation 0.5s ease-in-out;
+  transition: all 0.5s;
+}
+
+@keyframes replayAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.replay h5 {
+  font-size: 2.5rem;
+}
+
+.replay button {
+  font-size: 1rem;
+  background-color: rgb(4, 170, 231);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.replay button:hover {
+  background-color: rgb(0, 156, 235);
+}

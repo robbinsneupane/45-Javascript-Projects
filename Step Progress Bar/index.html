@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Step Progress Bar</title>
+  </head>
+  <body>
+    <div class="steps">
+      <div class="circles active">
+        <i class="fas fa-check"></i>
+        <small>Start</small>
+      </div>
+      <div class="circles">
+        <i class="fas fa-xmark"></i>
+        <small>Step 1</small>
+      </div>
+      <div class="circles">
+        <i class="fas fa-xmark"></i>
+        <small> Step 2 </small>
+      </div>
+      <div class="circles">
+        <i class="fas fa-xmark"></i>
+        <small>Step 3</small>
+      </div>
+      <div class="circles">
+        <i class="fas fa-xmark"></i>
+        <small>Done</small>
+      </div>
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+    </div>
+
+    <div class="btns">
+      <button id="leftArrow" disabled><i class="fas fa-arrow-left"></i></button>
+      <button id="rightArrow"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
